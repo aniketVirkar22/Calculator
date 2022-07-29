@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator using JavaScript</title>
+  <link rel="shortcut icon" href="./calculator-solid.svg" type="image/x-icon">
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/b91379b65b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form name="calculator">
+    <table>
+      <tr>
+        <td colspan="4"><input type="text" name="result" style="text-align: right;" placeholder="0" id="result">
+        </td>
+      </tr>
+      <tr>
+        <td><button type="button" value="1" onclick="number(value)">1</button></td>
+        <td><button type="button" value="2" onclick="number(value)">2</button></td>
+        <td><button type="button" value="3" onclick="number(value)">3</button></td>
+        <td><button type="button" value="backspc" onclick="backspc()"><i class="fa-solid fa-delete-left"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td><button type="button" value="4" onclick="number(value)">4</button></td>
+        <td><button type="button" value="5" onclick="number(value)">5</button></td>
+        <td><button type="button" value="6" onclick="number(value)">6</button></td>
+        <td><button type="button" value="-" onclick="number(value)">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="7" onclick="number(value)">7</button></td>
+        <td><button type="button" value="8" onclick="number(value)">8</button></td>
+        <td><button type="button" value="9" onclick="number(value)">9</button></td>
+        <td><button type="button" value="/" onclick="number(value)">/</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" value="." onclick="number(value)">.</button></td>
+        <td><button type="button" value="0" onclick="number(value)">0</button></td>
+        <td><button type="button" value="*" onclick="number(value)">*</button></td>
+        <td><button type="button" value="%" onclick="number(value)">%</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button type="button" value="=" onclick="equal()">=</button></td>
+        <td><td><button value="+" onclick="number(value)" type="button">+</button></td>
+        <td colspan="2"><button type="button" onclick="remv()">AC</button></td>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+
+</html>
